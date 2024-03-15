@@ -1,4 +1,8 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startups_errors', 1);
+error_reporting(E_ALL);
+
     include './html/header.html';
     include './html/nav.php';
 
@@ -6,7 +10,7 @@
      * Mise en place du rooter
      */
     $page = $_GET['page'];
-    //var_dump($page);
+    var_dump($page);
 
     if($page !== null) {
         switch ($page) {
