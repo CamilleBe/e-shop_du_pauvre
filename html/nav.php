@@ -30,7 +30,8 @@
           <a href="./index.php?page=panier" class="btn btn-primary">
               Panier
               <span class="badge text-bg-secondary">
-                  <?= count($_SESSION['panier']) ?>
+                  <?= array_sum(array_column($_SESSION['panier'], 'quantite'))?>
+
               </span>
           </a>
           <a href="./backend/logout.php" class="btn btn-primary">Déconnexion</a>
