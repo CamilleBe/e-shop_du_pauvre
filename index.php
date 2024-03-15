@@ -6,13 +6,16 @@ error_reporting(E_ALL);
     include './html/header.html';
     include './html/nav.php';
 
+
+
     /**
      * Mise en place du rooter
      */
-    $page = $_GET['page'];
-    var_dump($page);
 
-    if($page !== null) {
+    if(isset($_GET['page'])) {
+        $page = $_GET['page'];
+        //var_dump($page);
+
         switch ($page) {
             case 'contact':
                 include './frontend/contact.php';
