@@ -5,6 +5,9 @@
     /**
      * Mise en place du rooter
      */
+    $page = $_GET['page'];
+    //var_dump($page);
+
     if($page !== null) {
         switch ($page) {
             case 'contact':
