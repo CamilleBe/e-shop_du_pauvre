@@ -3,6 +3,7 @@
         <h1>Liste Produits</h1>
         <div class="d-flex flex-wrap justify-content-center">
         <?php
+        //var_dump($_SESSION['panier']);
             require './bdd/produits.php';
 
             foreach ($products as $key => $product) {
