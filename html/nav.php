@@ -20,9 +20,30 @@
               <a class="nav-link" href="index.php?page=contact">Contact</a>
           </li>
       </ul>
+        <!-- Afficheage conditionnel navbarre non log / nav barre log-->
+        <?php
+            if (isset($_SESSION['isLogin']) && $_SESSION['isLogin'] == true) {
+
+        ?>
+
+          <p>Bonjour <?= $_SESSION['prenom'] ?></p>
+          <a href="./index.php?page=panier" class="btn btn-primary">
+              Panier
+              <span class="badge text-bg-secondary">
+                  <?= count($_SESSION['panier']) ?>
+              </span>
+          </a>
+          <a href="./backend/logout.php" class="btn btn-primary">Déconnexion</a>
+
+        <?php
+            } else {
+        ?>
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Connexion
         </button>
+        <?php
+            }
+        ?>
 
     </div>
   </div>
