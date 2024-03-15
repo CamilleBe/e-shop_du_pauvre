@@ -2,7 +2,7 @@
 ?>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="index.php">
         <img src="EKOD-LOGO.svg" alt="logo">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,10 +14,10 @@
           <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
           <li class="nav-item">
-              <a class="nav-link" href="#">Produits</a>
+              <a class="nav-link" href="index.php?page=produits">Produits</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="index.php?page=contact">Contact</a>
           </li>
       </ul>
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
