@@ -4,11 +4,10 @@
         <div class="d-flex flex-wrap justify-content-center">
         <?php
             require './bdd/produits.php';
-            var_dump($products);
 
             foreach ($products as $key => $product) {
                 echo '
-                    <div class="card mx-8" style="width: 18rem;">
+                    <div class="card mx-2 my-4" style="width: 18rem;">
                        <img src="..." class="card-img-top" alt="...">
                           <div class="card-body">
                              <h5 class="card-title">' . $product['nom'] . '</h5>
