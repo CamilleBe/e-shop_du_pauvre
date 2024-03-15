@@ -23,7 +23,12 @@
         $mail->Body = $message;
 
         $mail->send();
+        $_SESSION['panier'] = [];
+        header('location: ./../index.php');
+        exit;
 
     } catch (Exception $e) {
+        header('location: ./../index.php?send=ko');
+        exit;
 
     }
