@@ -12,7 +12,7 @@ class Database extends PDO
     private const DBHOST = 'localhost';
     private const DBUSER = 'root';
     private const DBPWD = 'root';
-    private const DBNAME = 'demo_sql';
+    private const DBNAME = 'cms';
 
     private function __construct()
     {

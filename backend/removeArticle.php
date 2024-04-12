@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    if(isset($_GET['id']) && $_GET['id'] == 'all') {
+    if(isset($_GET['id']) && $_GET['id'] === 'all') {
         $_SESSION['panier'] = [];
 
     }
