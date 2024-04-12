@@ -15,7 +15,7 @@ class TelephoneModel extends ProductModel
 
     public function __construct()
     {
-        $this->table = "Telephones";
+        $this->table = "telephones";
     }
 
     /**
